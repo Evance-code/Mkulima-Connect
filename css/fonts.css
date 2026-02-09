@@ -1,0 +1,82 @@
+/* fonts.css - Font imports and font-face declarations */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Afrikan Font (if available, fallback to Montserrat) */
+@font-face {
+    font-family: 'Afrikan';
+    src: url('../fonts/afrikan.woff2') format('woff2'),
+        url('../fonts/afrikan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Swahili font support */
+@font-face {
+    font-family: 'Swahili Sans';
+    src: local('Arial'),
+        local('Helvetica');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Arabic support for future expansion */
+@font-face {
+    font-family: 'Arabic';
+    src: local('Arial'),
+        local('Tahoma');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+/* Symbol font for icons */
+@font-face {
+    font-family: 'Mkulima Icons';
+    src: url('../fonts/mkulima-icons.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* Icon classes */
+.icon {
+    font-family: 'Mkulima Icons';
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: none;
+    width: 1em;
+    text-align: center;
+}
+
+.icon-farmer::before {
+    content: '\e900';
+}
+
+.icon-crop::before {
+    content: '\e901';
+}
+
+.icon-market::before {
+    content: '\e902';
+}
+
+.icon-weather::before {
+    content: '\e903';
+}
+
+.icon-transport::before {
+    content: '\e904';
+}
+
+.icon-payment::before {
+    content: '\e905';
+}
+
+.icon-cooperative::before {
+    content: '\e906';
+}
+
+.icon-education::before {
+    content: '\e907';
+}

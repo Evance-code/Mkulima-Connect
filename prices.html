@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Market Prices - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Market Prices</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="prices.html" class="active">Market Prices</a>
+            <a href="sell.html">Sell Produce</a>
+            <a href="buy.html">Buy Produce</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="price-controls">
+            <h2>Real-Time Agricultural Prices</h2>
+            <div class="filter-controls">
+                <select id="cropFilter">
+                    <option value="all">All Crops</option>
+                    <option value="maize">Maize</option>
+                    <option value="beans">Beans</option>
+                    <option value="rice">Rice</option>
+                </select>
+                <select id="regionFilter">
+                    <option value="all">All Regions</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                </select>
+                <button id="refreshPrices">Refresh Prices</button>
+            </div>
+        </section>
+
+        <section class="price-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Crop</th>
+                        <th>Market</th>
+                        <th>Price (per kg)</th>
+                        <th>Change</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody id="priceData">
+                    <!-- Dynamic content from API -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="price-alerts">
+            <h3>Set Price Alerts</h3>
+            <div class="alert-form">
+                <input type="text" placeholder="Crop name" id="alertCrop">
+                <input type="number" placeholder="Target price" id="alertPrice">
+                <button id="setAlert">Set Alert</button>
+            </div>
+            <div class="active-alerts" id="activeAlerts">
+                <h4>Your Active Alerts</h4>
+                <!-- Dynamic alerts -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/marketData.js"></script>
+</body>
+
+</html>

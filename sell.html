@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Produce - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Sell Your Produce</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="prices.html">Market Prices</a>
+            <a href="sell.html" class="active">Sell Produce</a>
+            <a href="buy.html">Buy Produce</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-form">
+            <h2>Create New Listing</h2>
+            <form id="produceListingForm">
+                <div class="form-group">
+                    <label for="cropType">Crop Type*</label>
+                    <select id="cropType" required>
+                        <option value="">Select crop</option>
+                        <option value="maize">Maize</option>
+                        <option value="beans">Beans</option>
+                        <option value="rice">Rice</option>
+                        <option value="coffee">Coffee</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity*</label>
+                    <input type="number" id="quantity" required placeholder="e.g., 100">
+                    <select id="unit">
+                        <option value="kg">kg</option>
+                        <option value="bags">Bags</option>
+                        <option value="tons">Tons</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quality">Quality Grade</label>
+                    <select id="quality">
+                        <option value="grade_a">Grade A (Premium)</option>
+                        <option value="grade_b">Grade B (Standard)</option>
+                        <option value="grade_c">Grade C (Fair)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price per unit*</label>
+                    <input type="number" id="price" required placeholder="Enter your asking price">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Farm location">
+                    <button type="button" id="getLocation">Use Current Location</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="3"
+                        placeholder="Additional details about your produce..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Photos (max 3)</label>
+                    <div class="photo-upload">
+                        <input type="file" id="photo1" accept="image/*">
+                        <input type="file" id="photo2" accept="image/*">
+                        <input type="file" id="photo3" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">List Produce</button>
+                    <button type="button" class="secondary-btn">Save as Draft</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="current-listings">
+            <h3>Your Active Listings</h3>
+            <div id="activeListings">
+                <!-- Dynamic content from JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/listingManager.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

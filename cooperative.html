@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooperative Tools - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Cooperative Center</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="prices.html">Market Prices</a>
+            <a href="sell.html">Sell Produce</a>
+            <a href="buy.html">Buy Produce</a>
+            <a href="cooperative.html" class="active">Cooperative</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cooperative-header">
+            <h2>Maize Farmers Cooperative</h2>
+            <p class="coop-stats">45 Members • $125,000 Total Sales • 98% Satisfaction</p>
+        </section>
+
+        <section class="coop-dashboard">
+            <div class="coop-card">
+                <h3>Collective Selling</h3>
+                <p>Combine produce for better prices</p>
+                <button onclick="location.href='sell.html?coop=true'">Create Group Listing</button>
+            </div>
+            <div class="coop-card">
+                <h3>Bulk Buying</h3>
+                <p>Purchase inputs at wholesale prices</p>
+                <button>View Input Deals</button>
+            </div>
+            <div class="coop-card">
+                <h3>Shared Logistics</h3>
+                <p>Reduce transport costs together</p>
+                <button onclick="location.href='logistics.html'">Plan Shared Transport</button>
+            </div>
+        </section>
+
+        <section class="coop-members">
+            <h3>Cooperative Members</h3>
+            <div class="member-list">
+                <!-- Dynamic member list -->
+                <div class="member">
+                    <span class="member-name">John Farmer</span>
+                    <span class="member-contribution">50 bags this month</span>
+                </div>
+            </div>
+            <button id="addMember">Add New Member</button>
+        </section>
+
+        <section class="coop-finances">
+            <h3>Financial Overview</h3>
+            <div class="finance-summary">
+                <div class="finance-item">
+                    <h4>This Month's Sales</h4>
+                    <p class="amount">$12,450</p>
+                </div>
+                <div class="finance-item">
+                    <h4>Member Payouts</h4>
+                    <p class="amount">$10,800</p>
+                </div>
+                <div class="finance-item">
+                    <h4>Cooperative Fund</h4>
+                    <p class="amount">$1,650</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coop-meetings">
+            <h3>Upcoming Meetings</h3>
+            <div class="meeting-card">
+                <h4>Monthly General Meeting</h4>
+                <p>March 15, 2026 • 10:00 AM</p>
+                <p>Community Center, Arusha</p>
+                <button>RSVP</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Resources - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Learning Center</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="prices.html">Market Prices</a>
+            <a href="sell.html">Sell Produce</a>
+            <a href="buy.html">Buy Produce</a>
+            <a href="learn.html" class="active">Learn</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="weather-section">
+            <h2>Weather Forecast</h2>
+            <div class="weather-card" id="weatherForecast">
+                <!-- Weather data from WeatherAPI -->
+            </div>
+        </section>
+
+        <section class="advisory-section">
+            <h2>Farming Advisory</h2>
+            <div class="advisory-cards">
+                <div class="advisory-card">
+                    <h3>Pest Alerts</h3>
+                    <p>Current pest warnings in your region</p>
+                    <button>View Details</button>
+                </div>
+                <div class="advisory-card">
+                    <h3>Planting Calendar</h3>
+                    <p>Best planting times for your crops</p>
+                    <button>View Calendar</button>
+                </div>
+                <div class="advisory-card">
+                    <h3>Best Practices</h3>
+                    <p>Improve your farming techniques</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="forum-section">
+            <h2>Community Forum</h2>
+            <div class="forum-topics">
+                <div class="topic">
+                    <h4>Maize Farming Tips</h4>
+                    <p>Share experiences with maize cultivation</p>
+                    <span class="post-count">24 posts</span>
+                </div>
+                <div class="topic">
+                    <h4>Market Strategies</h4>
+                    <p>Discuss pricing and selling approaches</p>
+                    <span class="post-count">18 posts</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Downloadable Resources</h2>
+            <div class="resource-list">
+                <a href="#" class="resource-item">Farming Guide PDF</a>
+                <a href="#" class="resource-item">Pest Identification Chart</a>
+                <a href="#" class="resource-item">Soil Testing Instructions</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

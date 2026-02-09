@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Messages</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="prices.html">Market Prices</a>
+            <a href="sell.html">Sell Produce</a>
+            <a href="buy.html">Buy Produce</a>
+            <a href="messages.html" class="active">Messages</a>
+        </nav>
+    </header>
+
+    <main class="messages-container">
+        <aside class="conversation-list">
+            <h3>Conversations</h3>
+            <div class="conversation active">
+                <div class="conversation-avatar">JS</div>
+                <div class="conversation-details">
+                    <h4>John Smith (Buyer)</h4>
+                    <p>Interested in your maize...</p>
+                    <span class="time">10:30 AM</span>
+                </div>
+            </div>
+            <div class="conversation">
+                <div class="conversation-avatar">MC</div>
+                <div class="conversation-details">
+                    <h4>Maize Cooperative</h4>
+                    <p>Group buying opportunity...</p>
+                    <span class="time">Yesterday</span>
+                </div>
+            </div>
+        </aside>
+
+        <section class="message-thread">
+            <div class="message-header">
+                <h3>John Smith</h3>
+                <span class="user-rating">★★★★☆ (4.2)</span>
+            </div>
+
+            <div class="messages" id="messageThread">
+                <div class="message received">
+                    <p>Hello, I'm interested in your maize listing. Is 50 bags available?</p>
+                    <span class="timestamp">10:30 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Yes, all 50 bags are available. Grade A quality.</p>
+                    <span class="timestamp">10:32 AM</span>
+                </div>
+            </div>
+
+            <div class="message-input">
+                <textarea id="newMessage" placeholder="Type your message..."></textarea>
+                <button id="sendMessage">Send</button>
+            </div>
+        </section>
+
+        <aside class="transaction-details">
+            <h3>Deal Details</h3>
+            <div class="deal-info">
+                <p><strong>Product:</strong> Maize</p>
+                <p><strong>Quantity:</strong> 50 bags</p>
+                <p><strong>Agreed Price:</strong> $23/bag</p>
+                <p><strong>Status:</strong> Negotiating</p>
+            </div>
+            <div class="deal-actions">
+                <button class="primary-btn">Accept Offer</button>
+                <button class="secondary-btn">Counter Offer</button>
+                <button class="warning-btn">Report Issue</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/messaging.js"></script>
+</body>
+
+</html>

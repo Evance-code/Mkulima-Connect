@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Mode - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        .offline-mode {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .offline-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Offline Mode</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="offline.html" class="active">Offline</a>
+        </nav>
+    </header>
+
+    <main class="offline-mode">
+        <div class="offline-icon">📶</div>
+        <h2>You're Currently Offline</h2>
+        <p>Don't worry! You can still access important information.</p>
+
+        <div class="offline-features">
+            <div class="feature">
+                <h3>📋 Cached Listings</h3>
+                <p>View your recent produce listings</p>
+                <button id="viewCachedListings">View</button>
+            </div>
+            <div class="feature">
+                <h3>📞 Contact Information</h3>
+                <p>Access saved buyer/farmer contacts</p>
+                <button id="viewContacts">View</button>
+            </div>
+            <div class="feature">
+                <h3>📖 Farming Guides</h3>
+                <p>Read saved agricultural resources</p>
+                <button id="viewGuides">View</button>
+            </div>
+        </div>
+
+        <div class="offline-actions">
+            <h3>Actions You Can Take Offline</h3>
+            <ul>
+                <li>📝 Draft new produce listings</li>
+                <li>✏️ Edit saved information</li>
+                <li>💾 Save data for later sync</li>
+                <li>📊 View cached market prices</li>
+            </ul>
+        </div>
+
+        <div class="sync-status">
+            <h3>Sync Status</h3>
+            <p id="syncMessage">Last synced: Today, 9:45 AM</p>
+            <p>Changes will sync automatically when you're back online</p>
+            <button id="tryReconnect" disabled>Trying to reconnect...</button>
+        </div>
+
+        <div class="offline-tips">
+            <h4>Tips for Using Mkulima Connect Offline:</h4>
+            <p>• Save important information before going offline</p>
+            <p>• Prices may not be current in offline mode</p>
+            <p>• Messages will send automatically when reconnected</p>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Mkulima Connect Offline Mode</strong></p>
+        <p>Your data is saved locally and will sync when connection is restored</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/offlineManager.js"></script>
+    <script>
+        // Check connection status
+        window.addEventListener('online', function () {
+            document.getElementById('tryReconnect').textContent = 'Reconnected!';
+            document.getElementById('tryReconnect').disabled = false;
+            document.getElementById('syncMessage').textContent = 'Syncing now...';
+        });
+    </script>
+</body>
+
+</html>

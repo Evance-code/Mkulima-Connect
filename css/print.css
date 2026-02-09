@@ -1,0 +1,213 @@
+/* print.css - Print-specific styles */
+
+@media print {
+
+    /* Reset for printing */
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hide non-essential elements */
+    header,
+    footer,
+    nav,
+    button,
+    .action-buttons,
+    .form-actions,
+    .main-nav,
+    .no-print {
+        display: none !important;
+    }
+
+    /* Typography for print */
+    h1,
+    h2,
+    h3,
+    h4 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: 24pt;
+        margin-top: 1cm;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    p,
+    li {
+        page-break-inside: avoid;
+    }
+
+    /* Links in print */
+    a {
+        text-decoration: underline;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+    }
+
+    /* Table styling for print */
+    table {
+        page-break-inside: avoid;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        padding: 4pt;
+    }
+
+    th {
+        background: #eee !important;
+        font-weight: bold;
+    }
+
+    /* Receipt-specific styles */
+    .receipt {
+        width: 80mm;
+        margin: 0 auto;
+        padding: 5mm;
+        font-family: 'Courier New', monospace;
+        font-size: 11pt;
+    }
+
+    .receipt-header {
+        text-align: center;
+        border-bottom: 2px solid #000;
+        margin-bottom: 5mm;
+        padding-bottom: 2mm;
+    }
+
+    .receipt-items {
+        margin: 5mm 0;
+    }
+
+    .receipt-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2mm;
+    }
+
+    .receipt-total {
+        border-top: 2px solid #000;
+        padding-top: 2mm;
+        margin-top: 5mm;
+        font-weight: bold;
+    }
+
+    /* QR Code for receipts */
+    .receipt-qr {
+        text-align: center;
+        margin-top: 5mm;
+    }
+
+    /* Listing print view */
+    .listing-print {
+        page-break-inside: avoid;
+        border: 1px solid #000;
+        padding: 5mm;
+        margin-bottom: 5mm;
+    }
+
+    .listing-print-image {
+        max-width: 100mm;
+        max-height: 100mm;
+        display: block;
+        margin: 0 auto 3mm;
+    }
+
+    .listing-details-print {
+        font-size: 11pt;
+    }
+
+    /* Page breaks */
+    .page-break-before {
+        page-break-before: always;
+    }
+
+    .page-break-after {
+        page-break-after: always;
+    }
+
+    .avoid-break {
+        page-break-inside: avoid;
+    }
+
+    /* Compact view for transaction history */
+    .transaction-history-print {
+        font-size: 10pt;
+    }
+
+    .transaction-row {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed #ccc;
+        padding: 1mm 0;
+    }
+
+    /* Watermark for official documents */
+    .official-document {
+        position: relative;
+    }
+
+    .official-document:before {
+        content: "MKULIMA CONNECT - OFFICIAL DOCUMENT";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 48pt;
+        color: rgba(0, 0, 0, 0.1);
+        z-index: -1;
+        white-space: nowrap;
+    }
+
+    /* Multi-language receipt support */
+    .receipt-bilingual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5mm;
+    }
+
+    /* Invoice numbering */
+    .invoice-number {
+        text-align: right;
+        font-size: 10pt;
+        margin-bottom: 3mm;
+    }
+
+    /* Terms and conditions fine print */
+    .terms-print {
+        font-size: 8pt;
+        margin-top: 10mm;
+        border-top: 1px solid #000;
+        padding-top: 2mm;
+    }
+
+    /* Signature line */
+    .signature-line {
+        margin-top: 15mm;
+        border-top: 1px solid #000;
+        width: 50mm;
+        text-align: center;
+        padding-top: 2mm;
+    }
+}

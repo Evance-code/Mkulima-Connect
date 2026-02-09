@@ -1,0 +1,380 @@
+{
+    "crops": [
+        {
+            "id": "maize",
+            "name": "Maize",
+            "scientificName": "Zea mays",
+            "category": "cereal",
+            "growingSeason": [
+                "long",
+                "short"
+            ],
+            "optimalTemperature": "20-30°C",
+            "rainfallRequirement": "500-800mm",
+            "growingPeriod": "90-120 days",
+            "storageConditions": "Cool, dry place with 12-14% moisture",
+            "shelfLife": "6-12 months",
+            "commonVarieties": [
+                "Hybrid",
+                "Open Pollinated"
+            ],
+            "marketPriceRange": {
+                "min": 200,
+                "max": 350,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "beans",
+            "name": "Beans",
+            "scientificName": "Phaseolus vulgaris",
+            "category": "legume",
+            "growingSeason": [
+                "short"
+            ],
+            "optimalTemperature": "18-24°C",
+            "rainfallRequirement": "400-600mm",
+            "growingPeriod": "60-90 days",
+            "storageConditions": "Dry, well-ventilated area",
+            "shelfLife": "1-2 years",
+            "commonVarieties": [
+                "Rosecoco",
+                "Mwitemania",
+                "Canadian Wonder"
+            ],
+            "marketPriceRange": {
+                "min": 300,
+                "max": 450,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "rice",
+            "name": "Rice",
+            "scientificName": "Oryza sativa",
+            "category": "cereal",
+            "growingSeason": [
+                "long"
+            ],
+            "optimalTemperature": "20-35°C",
+            "rainfallRequirement": "1000-2000mm",
+            "growingPeriod": "100-150 days",
+            "storageConditions": "Cool, dry, rodent-proof",
+            "shelfLife": "1-2 years",
+            "commonVarieties": [
+                "Paddy",
+                "Basmati",
+                "Jasmine"
+            ],
+            "marketPriceRange": {
+                "min": 350,
+                "max": 500,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "coffee",
+            "name": "Coffee",
+            "scientificName": "Coffea arabica",
+            "category": "cash crop",
+            "growingSeason": [
+                "perennial"
+            ],
+            "optimalTemperature": "15-24°C",
+            "rainfallRequirement": "1500-2000mm",
+            "growingPeriod": "3-4 years to first harvest",
+            "storageConditions": "Cool, dry, away from strong odors",
+            "shelfLife": "6-12 months (green beans)",
+            "commonVarieties": [
+                "Arabica",
+                "Robusta"
+            ],
+            "marketPriceRange": {
+                "min": 1000,
+                "max": 2000,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "tea",
+            "name": "Tea",
+            "scientificName": "Camellia sinensis",
+            "category": "cash crop",
+            "growingSeason": [
+                "perennial"
+            ],
+            "optimalTemperature": "13-30°C",
+            "rainfallRequirement": "1200-2500mm",
+            "growingPeriod": "3 years to first harvest",
+            "storageConditions": "Airtight container, cool, dry",
+            "shelfLife": "6-12 months",
+            "commonVarieties": [
+                "Black",
+                "Green",
+                "Oolong"
+            ],
+            "marketPriceRange": {
+                "min": 800,
+                "max": 1500,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "tomatoes",
+            "name": "Tomatoes",
+            "scientificName": "Solanum lycopersicum",
+            "category": "vegetable",
+            "growingSeason": [
+                "short"
+            ],
+            "optimalTemperature": "18-27°C",
+            "rainfallRequirement": "400-800mm",
+            "growingPeriod": "60-100 days",
+            "storageConditions": "Cool, not refrigerated",
+            "shelfLife": "1-2 weeks",
+            "commonVarieties": [
+                "Roma",
+                "Cherry",
+                "Beefsteak"
+            ],
+            "marketPriceRange": {
+                "min": 400,
+                "max": 800,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "potatoes",
+            "name": "Potatoes",
+            "scientificName": "Solanum tuberosum",
+            "category": "tuber",
+            "growingSeason": [
+                "short"
+            ],
+            "optimalTemperature": "15-20°C",
+            "rainfallRequirement": "500-700mm",
+            "growingPeriod": "80-100 days",
+            "storageConditions": "Cool, dark, well-ventilated",
+            "shelfLife": "2-4 months",
+            "commonVarieties": [
+                "Irish",
+                "Sweet"
+            ],
+            "marketPriceRange": {
+                "min": 250,
+                "max": 400,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "cassava",
+            "name": "Cassava",
+            "scientificName": "Manihot esculenta",
+            "category": "tuber",
+            "growingSeason": [
+                "long"
+            ],
+            "optimalTemperature": "25-29°C",
+            "rainfallRequirement": "1000-1500mm",
+            "growingPeriod": "8-24 months",
+            "storageConditions": "Cool, dry, processed within 48 hours",
+            "shelfLife": "1-2 days (fresh)",
+            "commonVarieties": [
+                "Sweet",
+                "Bitter"
+            ],
+            "marketPriceRange": {
+                "min": 150,
+                "max": 300,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "bananas",
+            "name": "Bananas",
+            "scientificName": "Musa spp.",
+            "category": "fruit",
+            "growingSeason": [
+                "perennial"
+            ],
+            "optimalTemperature": "26-30°C",
+            "rainfallRequirement": "2000-2500mm",
+            "growingPeriod": "9-12 months",
+            "storageConditions": "Room temperature, not refrigerated",
+            "shelfLife": "5-7 days",
+            "commonVarieties": [
+                "Cavendish",
+                "Plantain",
+                "Lady Finger"
+            ],
+            "marketPriceRange": {
+                "min": 300,
+                "max": 600,
+                "unit": "USD/ton"
+            }
+        },
+        {
+            "id": "avocado",
+            "name": "Avocado",
+            "scientificName": "Persea americana",
+            "category": "fruit",
+            "growingSeason": [
+                "perennial"
+            ],
+            "optimalTemperature": "20-24°C",
+            "rainfallRequirement": "1000-1200mm",
+            "growingPeriod": "3-4 years to first harvest",
+            "storageConditions": "Cool, not refrigerated when ripe",
+            "shelfLife": "3-7 days",
+            "commonVarieties": [
+                "Hass",
+                "Fuerte",
+                "Nabal"
+            ],
+            "marketPriceRange": {
+                "min": 800,
+                "max": 1500,
+                "unit": "USD/ton"
+            }
+        }
+    ],
+    "categories": {
+        "cereal": [
+            "maize",
+            "rice",
+            "wheat",
+            "sorghum",
+            "millet"
+        ],
+        "legume": [
+            "beans",
+            "peas",
+            "lentils",
+            "chickpeas",
+            "groundnuts"
+        ],
+        "tuber": [
+            "potatoes",
+            "cassava",
+            "sweet potatoes",
+            "yams"
+        ],
+        "vegetable": [
+            "tomatoes",
+            "onions",
+            "cabbage",
+            "spinach",
+            "kale"
+        ],
+        "fruit": [
+            "bananas",
+            "avocado",
+            "mango",
+            "pineapple",
+            "citrus"
+        ],
+        "cash_crop": [
+            "coffee",
+            "tea",
+            "cocoa",
+            "cotton",
+            "tobacco"
+        ],
+        "spice": [
+            "vanilla",
+            "cardamom",
+            "cinnamon",
+            "cloves",
+            "pepper"
+        ]
+    },
+    "seasonalCalendar": {
+        "tanzania": {
+            "longRains": [
+                "March",
+                "April",
+                "May"
+            ],
+            "shortRains": [
+                "October",
+                "November",
+                "December"
+            ],
+            "plantingSeasons": {
+                "maize": [
+                    "March-April",
+                    "October-November"
+                ],
+                "beans": [
+                    "March-April",
+                    "October-November"
+                ],
+                "rice": [
+                    "November-December"
+                ],
+                "coffee": [
+                    "April-May"
+                ],
+                "tea": [
+                    "Year-round with peaks in April and October"
+                ]
+            }
+        },
+        "kenya": {
+            "longRains": [
+                "March",
+                "April",
+                "May"
+            ],
+            "shortRains": [
+                "October",
+                "November"
+            ],
+            "plantingSeasons": {
+                "maize": [
+                    "March-April",
+                    "October"
+                ],
+                "beans": [
+                    "March-April",
+                    "October"
+                ],
+                "tea": [
+                    "Year-round with peaks in March and October"
+                ],
+                "coffee": [
+                    "March-April"
+                ]
+            }
+        },
+        "uganda": {
+            "firstSeason": [
+                "March",
+                "April",
+                "May"
+            ],
+            "secondSeason": [
+                "August",
+                "September",
+                "October"
+            ],
+            "plantingSeasons": {
+                "maize": [
+                    "March-April",
+                    "August-September"
+                ],
+                "beans": [
+                    "March-April",
+                    "August-September"
+                ],
+                "coffee": [
+                    "March-April",
+                    "September-October"
+                ],
+                "bananas": [
+                    "Year-round"
+                ]
+            }
+        }
+    }
+}

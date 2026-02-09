@@ -1,0 +1,328 @@
+/* theme.css - Color schemes and theming */
+
+/* Light Theme (Default) */
+:root {
+    --theme-primary: var(--primary);
+    --theme-secondary: var(--secondary);
+    --theme-accent: var(--accent);
+    --theme-background: var(--background);
+    --theme-surface: var(--white);
+    --theme-text: var(--text);
+    --theme-text-light: #666;
+    --theme-border: var(--light-gray);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --theme-primary: #32CD32;
+    /* Brighter green */
+    --theme-secondary: #FFD700;
+    /* Gold stays same */
+    --theme-accent: #D2691E;
+    /* Chocolate */
+    --theme-background: #1A1A1A;
+    /* Dark background */
+    --theme-surface: #2D2D2D;
+    /* Dark surface */
+    --theme-text: #E8E8E8;
+    /* Light text */
+    --theme-text-light: #A9A9A9;
+    /* Medium gray */
+    --theme-border: #404040;
+    /* Dark border */
+
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .market-overview,
+[data-theme="dark"] .quick-actions {
+    background: var(--theme-surface);
+    border: 1px solid var(--theme-border);
+}
+
+[data-theme="dark"] .input-field {
+    background: var(--theme-surface);
+    border-color: var(--theme-border);
+    color: var(--theme-text);
+}
+
+/* High Contrast Theme */
+[data-theme="high-contrast"] {
+    --theme-primary: #000000;
+    --theme-secondary: #FFFFFF;
+    --theme-accent: #0000FF;
+    --theme-background: #FFFFFF;
+    --theme-surface: #FFFFFF;
+    --theme-text: #000000;
+    --theme-text-light: #000000;
+    --theme-border: #000000;
+
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+}
+
+[data-theme="high-contrast"] .card,
+[data-theme="high-contrast"] .stat-card,
+[data-theme="high-contrast"] .market-overview {
+    border: 3px solid var(--theme-border);
+}
+
+[data-theme="high-contrast"] button {
+    border: 2px solid var(--theme-border) !important;
+}
+
+/* Seasonal Themes */
+/* Rainy Season Theme */
+[data-season="rainy"] {
+    --theme-primary: #1E90FF;
+    /* Dodger Blue */
+    --theme-secondary: #87CEEB;
+    /* Sky Blue */
+    --theme-accent: #4682B4;
+    /* Steel Blue */
+    --theme-background: #F0F8FF;
+    /* Alice Blue */
+}
+
+/* Harvest Season Theme */
+[data-season="harvest"] {
+    --theme-primary: #DAA520;
+    /* Goldenrod */
+    --theme-secondary: #FFD700;
+    /* Gold */
+    --theme-accent: #8B4513;
+    /* Saddle Brown */
+    --theme-background: #FFF8DC;
+    /* Cornsilk */
+}
+
+/* Planting Season Theme */
+[data-season="planting"] {
+    --theme-primary: #228B22;
+    /* Forest Green */
+    --theme-secondary: #98FB98;
+    /* Pale Green */
+    --theme-accent: #556B2F;
+    /* Dark Olive Green */
+    --theme-background: #F5FFFA;
+    /* Mint Cream */
+}
+
+/* Region-specific Color Schemes */
+/* Tanzania Theme */
+[data-region="tanzania"] {
+    --theme-primary: #1B4D3E;
+    /* Tanzanian Green */
+    --theme-secondary: #FFD700;
+    /* Gold */
+    --theme-accent: #00008B;
+    /* Dark Blue */
+}
+
+/* Kenya Theme */
+[data-region="kenya"] {
+    --theme-primary: #000000;
+    /* Black */
+    --theme-secondary: #FF0000;
+    /* Red */
+    --theme-accent: #008000;
+    /* Green */
+}
+
+/* Uganda Theme */
+[data-region="uganda"] {
+    --theme-primary: #FF0000;
+    /* Red */
+    --theme-secondary: #FFD700;
+    /* Yellow */
+    --theme-accent: #000000;
+    /* Black */
+}
+
+/* Accessibility Focus Styles */
+*:focus {
+    outline: 3px solid var(--theme-primary);
+    outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 3px solid var(--theme-primary);
+    outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .btn:hover,
+    .card:hover,
+    .listing-card:hover {
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+/* Swahili Language Specific Styling */
+[lang="sw"] {
+    font-family: var(--body-font);
+    letter-spacing: 0.5px;
+}
+
+[lang="sw"] h1,
+[lang="sw"] h2,
+[lang="sw"] h3 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+/* Swahili Typography Enhancements */
+.swahili-text {
+    line-height: 1.8;
+}
+
+/* RTL Support for Arabic (future expansion) */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .logo {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .main-nav {
+    flex-direction: row-reverse;
+}
+
+/* Seasonal Indicators */
+.season-indicator {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1001;
+}
+
+.season-rainy {
+    background: linear-gradient(135deg, #1E90FF, #87CEEB);
+    box-shadow: 0 0 10px #1E90FF;
+}
+
+.season-harvest {
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    box-shadow: 0 0 10px #FFD700;
+}
+
+.season-planting {
+    background: linear-gradient(135deg, #228B22, #98FB98);
+    box-shadow: 0 0 10px #228B22;
+}
+
+/* Crop Type Color Coding */
+.crop-maize {
+    --crop-color: #FFD700;
+    --crop-light: #FFF8DC;
+}
+
+.crop-beans {
+    --crop-color: #8B4513;
+    --crop-light: #F5DEB3;
+}
+
+.crop-rice {
+    --crop-color: #FAF3E0;
+    --crop-light: #FFF8DC;
+}
+
+.crop-coffee {
+    --crop-color: #6F4E37;
+    --crop-light: #D2B48C;
+}
+
+/* Apply crop colors */
+[data-crop="maize"] .crop-badge {
+    background: var(--crop-light);
+    color: var(--crop-color);
+    border: 1px solid var(--crop-color);
+}
+
+/* Market Status Colors */
+.status-available {
+    color: var(--success);
+    background: rgba(50, 205, 50, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.status-limited {
+    color: var(--warning);
+    background: rgba(255, 140, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.status-out-of-stock {
+    color: var(--error);
+    background: rgba(220, 20, 60, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* Price Trend Indicators */
+.trend-up {
+    color: var(--success);
+}
+
+.trend-up::after {
+    content: " ↗";
+}
+
+.trend-down {
+    color: var(--error);
+}
+
+.trend-down::after {
+    content: " ↘";
+}
+
+.trend-stable {
+    color: var(--medium-gray);
+}
+
+.trend-stable::after {
+    content: " →";
+}
+
+/* African Pattern Backgrounds */
+.african-pattern {
+    position: relative;
+    overflow: hidden;
+}
+
+.african-pattern::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><path d="M50,20 C65,20 80,30 80,50 C80,70 65,80 50,80 C35,80 20,70 20,50 C20,30 35,20 50,20 Z" fill="%23228B22"/></svg>');
+    background-size: 50px 50px;
+    z-index: -1;
+}
+
+/* Export Variables for JavaScript Use */
+:export {
+    primaryColor: var(--primary);
+    secondaryColor: var(--secondary);
+    accentColor: var(--accent);
+    backgroundColor: var(--background);
+    textColor: var(--text);
+}

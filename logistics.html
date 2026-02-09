@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics - Mkulima Connect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Mkulima Connect Logo">
+            <h1>Logistics Center</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="prices.html">Market Prices</a>
+            <a href="sell.html">Sell Produce</a>
+            <a href="buy.html">Buy Produce</a>
+            <a href="logistics.html" class="active">Logistics</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Transport Cost Calculator</h2>
+            <div class="calculator">
+                <div class="input-group">
+                    <label>From Location</label>
+                    <input type="text" id="fromLocation" placeholder="Starting point">
+                </div>
+                <div class="input-group">
+                    <label>To Location</label>
+                    <input type="text" id="toLocation" placeholder="Destination">
+                </div>
+                <div class="input-group">
+                    <label>Load Weight (kg)</label>
+                    <input type="number" id="loadWeight" placeholder="Weight in kg">
+                </div>
+                <div class="input-group">
+                    <label>Vehicle Type</label>
+                    <select id="vehicleType">
+                        <option value="truck">Large Truck</option>
+                        <option value="pickup">Pickup Truck</option>
+                        <option value="motorcycle">Motorcycle</option>
+                    </select>
+                </div>
+                <button id="calculateCost">Calculate Cost</button>
+                <div class="result" id="costResult">
+                    <!-- Calculated cost will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="transporters-section">
+            <h3>Available Transporters</h3>
+            <div class="transporter-list" id="transporterList">
+                <!-- Dynamic transporter list -->
+            </div>
+        </section>
+
+        <section class="group-shipping">
+            <h3>Group Shipping</h3>
+            <p>Combine shipments with other farmers to reduce costs</p>
+            <div id="groupShippingOptions">
+                <!-- Group shipping options -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>

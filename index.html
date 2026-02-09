@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Mobile-first responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Mkulima Connect | Market Dashboard</title>
+    <meta name="description"
+        content="Mkulima Connect provides African farmers with real-time market prices, weather insights, and direct access to buyers." />
+
+    <!-- Accessibility & Best Practices -->
+    <meta name="theme-color" content="#228B22" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="app-header">
+        <div class="brand">
+            <h1>Mkulima Connect</h1>
+            <p class="tagline">Fair markets • Better harvests • Stronger farmers</p>
+        </div>
+
+        <nav aria-label="Main navigation" class="main-nav">
+            <ul>
+                <li><a href="index.html" aria-current="page">Dashboard</a></li>
+                <li><a href="sell.html">Sell Produce</a></li>
+                <li><a href="buy.html">Buy Produce</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main-content">
+
+        <!-- ===== Market Overview Section ===== -->
+        <section class="dashboard-section" aria-labelledby="market-overview-title">
+            <header class="section-header">
+                <h2 id="market-overview-title">Market Overview</h2>
+                <p>
+                    Latest commodity price indicators to help farmers negotiate fair prices
+                    and choose the best markets.
+                </p>
+            </header>
+
+            <!-- Dynamic price cards injected by JS -->
+            <div id="price-list" class="card-grid" aria-live="polite" aria-busy="true">
+                <!-- JS will replace this -->
+                <p class="loading">Loading market prices…</p>
+            </div>
+        </section>
+
+        <!-- ===== Weather Advisory Section ===== -->
+        <section class="dashboard-section" aria-labelledby="weather-title">
+            <header class="section-header">
+                <h2 id="weather-title">Weather Advisory</h2>
+                <p>
+                    Localized weather information to support planting, harvesting,
+                    and storage decisions.
+                </p>
+            </header>
+
+            <!-- Dynamic weather content injected by JS -->
+            <div id="weather-info" class="weather-container" aria-live="polite" aria-busy="true">
+                <!-- JS will replace this -->
+                <p class="loading">Loading weather forecast…</p>
+            </div>
+        </section>
+
+        <!-- ===== Advisory / Insight Section ===== -->
+        <section class="dashboard-section" aria-labelledby="advisory-title">
+            <header class="section-header">
+                <h2 id="advisory-title">Farming Insights</h2>
+            </header>
+
+            <!-- Static + dynamic combination (proposal-aligned) -->
+            <ul class="advisory-list">
+                <li>
+                    📈 Monitor price trends before selling to avoid middlemen exploitation.
+                </li>
+                <li>
+                    🌧️ Use rainfall forecasts to plan harvest and reduce post-harvest losses.
+                </li>
+                <li>
+                    🚚 Coordinate transport early to minimize delays and spoilage.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="app-footer">
+        <p>
+            &copy; 2026 Mkulima Connect • Built for WDD 330 • BYU–Idaho
+        </p>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <!-- App entry point (ES Module) -->
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
