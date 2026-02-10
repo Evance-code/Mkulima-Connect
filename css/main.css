@@ -1129,3 +1129,25 @@ footer {
     background-color: #1e7a1e;
     transform: translateY(-2px);
 }
+.weather-alert {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: #fff3cd;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
