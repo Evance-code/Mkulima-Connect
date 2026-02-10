@@ -1,0 +1,25 @@
+{
+    "languages": [
+        {
+            "code": "sw",
+            "name": "Swahili",
+            "nativeName": "Kiswahili",
+            "direction": "ltr",
+            "isDefault": true
+        },
+        {
+            "code": "en",
+            "name": "English",
+            "nativeName": "English",
+            "direction": "ltr",
+            "isDefault": false
+        },
+        {
+            "code": "fr",
+            "name": "French",
+            "nativeName": "Français",
+            "direction": "ltr",
+            "isDefault": false
+        }
+    ]
+}

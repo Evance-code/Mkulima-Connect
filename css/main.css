@@ -1088,3 +1088,44 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* ===============================
+   PROFILE AVATAR
+   =============================== */
+.profile-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Standard avatar size */
+.profile-avatar img,
+.avatar-img {
+    width: 120px;
+    /* standard profile size */
+    height: 120px;
+    object-fit: cover;
+    /* prevents stretching */
+    border-radius: 50%;
+    /* circular avatar */
+    border: 3px solid var(--primary);
+    box-shadow: var(--shadow);
+    background-color: #f0f0f0;
+}
+
+/* Button styling */
+#changeAvatar {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#changeAvatar:hover {
+    background-color: #1e7a1e;
+    transform: translateY(-2px);
+}

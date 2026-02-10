@@ -1,0 +1,39 @@
+{
+    "lastUpdated": "2026-02-08T10:30:00Z",
+    "currency": "TZS",
+    "commodities": [
+        {
+            "id": 1,
+            "name": "Maize",
+            "pricePerKg": 1200,
+            "market": "Kariakoo",
+            "region": "Dar es Salaam",
+            "unit": "kg",
+            "availability": "High",
+            "trend": "Rising",
+            "updatedAt": "2026-02-08"
+        },
+        {
+            "id": 2,
+            "name": "Rice",
+            "pricePerKg": 2500,
+            "market": "Morogoro Central",
+            "region": "Morogoro",
+            "unit": "kg",
+            "availability": "Medium",
+            "trend": "Stable",
+            "updatedAt": "2026-02-08"
+        },
+        {
+            "id": 3,
+            "name": "Beans",
+            "pricePerKg": 3000,
+            "market": "Soko Kuu",
+            "region": "Arusha",
+            "unit": "kg",
+            "availability": "Low",
+            "trend": "Falling",
+            "updatedAt": "2026-02-08"
+        }
+    ]
+}

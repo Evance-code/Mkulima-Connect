@@ -1,0 +1,56 @@
+{
+    "regions": [
+        {
+            "id": "tz-dar",
+            "name": "Dar es Salaam",
+            "country": "Tanzania",
+            "latitude": -6.7924,
+            "longitude": 39.2083,
+            "markets": [
+                "Kariakoo",
+                "Buguruni",
+                "Temeke"
+            ],
+            "mainCrops": [
+                "Maize",
+                "Rice",
+                "Vegetables"
+            ],
+            "climate": "Coastal tropical"
+        },
+        {
+            "id": "tz-moro",
+            "name": "Morogoro",
+            "country": "Tanzania",
+            "latitude": -6.8278,
+            "longitude": 37.6591,
+            "markets": [
+                "Central Market",
+                "Mazimbu"
+            ],
+            "mainCrops": [
+                "Rice",
+                "Maize",
+                "Sugarcane"
+            ],
+            "climate": "Sub-humid tropical"
+        },
+        {
+            "id": "tz-aru",
+            "name": "Arusha",
+            "country": "Tanzania",
+            "latitude": -3.3869,
+            "longitude": 36.6829,
+            "markets": [
+                "Kilombero",
+                "Soko Kuu"
+            ],
+            "mainCrops": [
+                "Beans",
+                "Coffee",
+                "Maize"
+            ],
+            "climate": "Highland temperate"
+        }
+    ]
+}

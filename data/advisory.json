@@ -1,0 +1,28 @@
+{
+    "advisories": [
+        {
+            "id": 101,
+            "category": "Market",
+            "title": "Sell During Peak Demand",
+            "message": "Monitor market prices daily and sell when demand is highest to maximize profit.",
+            "icon": "📈",
+            "priority": "High"
+        },
+        {
+            "id": 102,
+            "category": "Weather",
+            "title": "Prepare for Heavy Rains",
+            "message": "Heavy rainfall is expected in some regions. Ensure crops are well-drained to prevent losses.",
+            "icon": "🌧️",
+            "priority": "Medium"
+        },
+        {
+            "id": 103,
+            "category": "Logistics",
+            "title": "Plan Transport Early",
+            "message": "Secure transport ahead of harvest time to reduce post-harvest spoilage.",
+            "icon": "🚚",
+            "priority": "Low"
+        }
+    ]
+}
